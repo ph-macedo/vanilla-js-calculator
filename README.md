@@ -44,5 +44,5 @@ Diferente de implementações simples baseadas na função global `eval()`, este
 
 1. Clone o repositório para sua máquina local:
    ```bash
-   git clone [https://github.com/ph-macedo/vanilla-js-calculator.git](https://github.com/ph-macedo/vanilla-js-calculator.git)
+   git clone https://github.com/ph-macedo/vanilla-js-calculator.git
    ```
