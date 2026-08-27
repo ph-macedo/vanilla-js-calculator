@@ -6,7 +6,7 @@ Uma calculadora web responsiva e funcional desenvolvida com **HTML5, CSS3 e Java
 
 ## 🚀 Demonstração
 
-👉 **[Acesse a demonstração online](#)**
+👉 **[Acesse a demonstração online](https://ph-macedo.github.io/vanilla-js-calculator/)**
 
 ---
 
