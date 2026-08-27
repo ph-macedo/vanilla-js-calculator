@@ -4,6 +4,8 @@ Calculadora simples desenvolvida com HTML, CSS e JavaScript puro (Vanilla JS), c
 
 👉 **[Acesse a demonstração online](https://ph-macedo.github.io/vanilla-js-calculator/)**
 
+![Calculator Preview](screenshots/calculator.png)
+
 ## 🚀 Funcionalidades
 
 - Operações básicas (soma, subtração, multiplicação e divisão) com números inteiros
