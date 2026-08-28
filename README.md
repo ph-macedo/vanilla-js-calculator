@@ -15,9 +15,9 @@ Calculadora simples desenvolvida com HTML, CSS e JavaScript puro (Vanilla JS), c
 
 ## 📌 Próximos Passos (Roadmap)
 
-- [ ] Suporte a números decimais (botão `,`)
-- [ ] Botão de apagar o último dígito (Backspace)
-- [ ] Botão CE (limpar apenas o termo atual)
+- [x] Suporte a números decimais (botão `,`)
+- [x] Botão de apagar o último dígito (Backspace)
+- [x] Botão CE (limpar apenas o termo atual)
 
 ## 🛠️ Tecnologias
 

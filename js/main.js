@@ -121,6 +121,73 @@ function pressKey(event) {
     updateDisplay();
     return;
   }
+
+  // PRESS BACKSPACE KEY
+
+  if (key.classList.contains("backspace")) {
+    if (getResult()) return;
+
+    if (!getOperator()) {
+      if (getTerm1() && getTerm1() !== "0") {
+        const updated = getTerm1().slice(0, -1);
+        setTerm1(updated === "" || updated === "-" ? "0" : updated);
+      }
+    } else {
+      if (getTerm2() && getTerm2() !== "0") {
+        const updated = getTerm2().slice(0, -1);
+        setTerm2(updated === "" || updated === "-" ? "0" : updated);
+      }
+    }
+
+    updateDisplay();
+    return;
+  }
+
+  // PRESS DECIMAL KEY
+
+  if (key.classList.contains("decimal")) {
+    if (getResult()) {
+      resetExpression("0", "", "", "");
+    }
+
+    if (!getOperator()) {
+      if (getTerm1() && getTerm1().includes(".") === false) {
+        setTerm1(getTerm1() + ".");
+      }
+    } else {
+      if (!getTerm2()) {
+        setTerm2("0.");
+      } else if (!getTerm2().includes(".")) {
+        setTerm2(getTerm2() + ".");
+      }
+    }
+
+    updateDisplay();
+    return;
+  }
+
+  // PRESS CLEAR-ENTRY KEY
+
+  if (key.classList.contains("clear-entry")) {
+    if (getResult()) {
+      resetExpression("0", "", "", "");
+      updateDisplay();
+      return;
+    }
+
+    if (!getOperator()) {
+      if (getTerm1() && getTerm1() !== "0") {
+        setTerm1("0");
+      }
+    } else {
+      if (getTerm2() !== "0") {
+        setTerm2("0");
+      }
+    }
+
+    updateDisplay();
+    return;
+  }
 }
 
 function updateDisplay() {
